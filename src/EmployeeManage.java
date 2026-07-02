@@ -12,8 +12,9 @@ class EmployeeManage {
             System.out.println("1. Add Employee");
             System.out.println("2. Display Employees");
             System.out.println("3. Search Employee");
-            System.out.println("4. Delete Employee");
-            System.out.println("5. Exit");
+            System.out.println("4.Update Employee");
+            System.out.println("5. Delete Employee");
+            System.out.println("6. Exit");
 
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
@@ -31,6 +32,11 @@ class EmployeeManage {
                     empService.searchEmployee(id);
                     break;
 
+                case 4:
+                    System.out.println("Enter the employee id for update");
+                    int id1=sc.nextInt();
+                    empService.updateEmployee(id1);
+                    break;
 
                 case 5:
                     System.out.println("Exiting");

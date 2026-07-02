@@ -12,6 +12,20 @@ public class Employee {
         this.department = department;
         this.salary = salary;
     }
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+    public void setName(String name)
+    {
+        this.name=name;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public void setDepartment(String department)
+    {
+        this.name=name;
+    }
     @Override
     public String toString() {
         return "Employee{id=" + employee_id +

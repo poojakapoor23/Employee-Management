@@ -42,8 +42,35 @@ public class EmployeeService {
         System.out.println("Employee not found");
     }
 
-    void updateEmployee() {
-
+    void updateEmployee(int id) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the choice  what you want to update");
+        System.out.println("1. Update Name");
+        System.out.println("2. Update Age ");
+        System.out.println("3. Update Department");
+        System.out.println("4. Update Salary");
+        System.out.println("5. Update All Details");
+        System.out.print("Enter your choice: ");
+        int choice = sc.nextInt();
+        switch (choice) {
+            case 1:
+                for (Employee employee : employees) {
+                    if (employee.employee_id == id)
+                        employee.setName("Pooja");
+                }
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                System.out.println("Exiting");
+                break;
+            default:
+                System.out.println("Invalid choice");
+        }
     }
 
     void deleteEmployee() {
